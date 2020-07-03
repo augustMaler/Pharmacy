@@ -88,7 +88,7 @@ namespace Pharmacy
                             availability.Pharmacy.PharmacyName,
                         });
                         item.Tag = availability;
-                        listView1.Items.Add(item);
+                        listViewAdv.Items.Add(item);
                     }
                 }
                 price = price / i;

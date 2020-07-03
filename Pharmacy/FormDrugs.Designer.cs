@@ -53,16 +53,16 @@
             this.labelFormRel = new System.Windows.Forms.Label();
             this.comboBoxFormRel = new System.Windows.Forms.ComboBox();
             this.buttonBack = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listViewAdv = new System.Windows.Forms.ListView();
             this.IdPh = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.NamePh = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.textBoxValue = new System.Windows.Forms.TextBox();
             this.textBoxPrice = new System.Windows.Forms.TextBox();
             this.labelValue = new System.Windows.Forms.Label();
             this.labelPrice = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelAdv = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.panelAdv.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelNameLogo
@@ -334,23 +334,23 @@
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
-            // listView1
+            // listViewAdv
             // 
-            this.listView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listViewAdv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.listViewAdv.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.IdPh,
             this.NamePh});
-            this.listView1.Font = new System.Drawing.Font("Calibri", 12F);
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(21, 144);
-            this.listView1.MultiSelect = false;
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(182, 391);
-            this.listView1.TabIndex = 36;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listViewAdv.Font = new System.Drawing.Font("Calibri", 12F);
+            this.listViewAdv.FullRowSelect = true;
+            this.listViewAdv.GridLines = true;
+            this.listViewAdv.HideSelection = false;
+            this.listViewAdv.Location = new System.Drawing.Point(21, 144);
+            this.listViewAdv.MultiSelect = false;
+            this.listViewAdv.Name = "listViewAdv";
+            this.listViewAdv.Size = new System.Drawing.Size(182, 391);
+            this.listViewAdv.TabIndex = 36;
+            this.listViewAdv.UseCompatibleStateImageBehavior = false;
+            this.listViewAdv.View = System.Windows.Forms.View.Details;
             // 
             // IdPh
             // 
@@ -403,18 +403,18 @@
             this.labelPrice.TabIndex = 39;
             this.labelPrice.Text = "Средняя цена";
             // 
-            // panel1
+            // panelAdv
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.labelValue);
-            this.panel1.Controls.Add(this.listView1);
-            this.panel1.Controls.Add(this.labelPrice);
-            this.panel1.Controls.Add(this.textBoxPrice);
-            this.panel1.Controls.Add(this.textBoxValue);
-            this.panel1.Location = new System.Drawing.Point(822, 14);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(226, 535);
-            this.panel1.TabIndex = 41;
+            this.panelAdv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelAdv.Controls.Add(this.labelValue);
+            this.panelAdv.Controls.Add(this.listViewAdv);
+            this.panelAdv.Controls.Add(this.labelPrice);
+            this.panelAdv.Controls.Add(this.textBoxPrice);
+            this.panelAdv.Controls.Add(this.textBoxValue);
+            this.panelAdv.Location = new System.Drawing.Point(822, 14);
+            this.panelAdv.Name = "panelAdv";
+            this.panelAdv.Size = new System.Drawing.Size(226, 535);
+            this.panelAdv.TabIndex = 41;
             // 
             // FormDrugs
             // 
@@ -422,7 +422,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1284, 561);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelAdv);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.comboBoxFormRel);
             this.Controls.Add(this.labelFormRel);
@@ -450,8 +450,8 @@
             this.Text = "FormDrugs";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormDrugs_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelAdv.ResumeLayout(false);
+            this.panelAdv.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -483,13 +483,13 @@
         private System.Windows.Forms.Label labelFormRel;
         private System.Windows.Forms.ComboBox comboBoxFormRel;
         private System.Windows.Forms.Button buttonBack;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listViewAdv;
         private System.Windows.Forms.ColumnHeader IdPh;
         private System.Windows.Forms.ColumnHeader NamePh;
         private System.Windows.Forms.TextBox textBoxValue;
         private System.Windows.Forms.TextBox textBoxPrice;
         private System.Windows.Forms.Label labelValue;
         private System.Windows.Forms.Label labelPrice;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelAdv;
     }
 }
