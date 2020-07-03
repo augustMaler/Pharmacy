@@ -111,12 +111,15 @@ namespace Pharmacy
                 MessageBox.Show("Невозможно удалить, эта запись используется!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void buttonBack_Click(object sender, EventArgs e)
         {
             Form Menu = Application.OpenForms[0];
             Menu.Show();
-            this.Close();
+            this.Hide();
+        }
+        private void FormAvailability_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

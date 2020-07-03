@@ -72,27 +72,28 @@ namespace Pharmacy
                 textBoxDos.Text = drugs.Dosage;
                 textBoxMan.Text = drugs.Manufacturer;
                 textBoxDateOfMan.Text = drugs.DateOfManufacture;
-                double a = 0;
-                double b = 0;
+                double price = 0;
+                double i = 0;
+                int value = 0;
                 foreach (Availability availability in Program.PhDB.Availability)
                 {
                     if (drugs.Id == availability.IdDrugs)
                     {
-                        b++;
-                        a += Convert.ToInt32(availability.Price);
+                        i++;
+                        price += Convert.ToInt32(availability.Price);
+                        value += Convert.ToInt32(availability.Value);
                         ListViewItem item = new ListViewItem(new string[]
                         {
                             availability.Id.ToString(),
                             availability.Pharmacy.PharmacyName,
-                            availability.Value
                         });
                         item.Tag = availability;
                         listView1.Items.Add(item);
                     }
-
                 }
-                a = a / b;
-                textBoxPrice.Text = a.ToString();
+                price = price / i;
+                textBoxPrice.Text = price.ToString();
+                textBoxValue.Text = value.ToString();
             }
             else
             {
@@ -138,7 +139,11 @@ namespace Pharmacy
         {
             Form Menu = Application.OpenForms[0];
             Menu.Show();
-            this.Close();
+            this.Hide();
+        }
+        private void FormDrugs_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

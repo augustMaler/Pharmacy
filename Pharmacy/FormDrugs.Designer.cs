@@ -60,7 +60,9 @@
             this.textBoxPrice = new System.Windows.Forms.TextBox();
             this.labelValue = new System.Windows.Forms.Label();
             this.labelPrice = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelNameLogo
@@ -114,7 +116,7 @@
             this.listViewDrugs.HideSelection = false;
             this.listViewDrugs.Location = new System.Drawing.Point(12, 158);
             this.listViewDrugs.Name = "listViewDrugs";
-            this.listViewDrugs.Size = new System.Drawing.Size(674, 391);
+            this.listViewDrugs.Size = new System.Drawing.Size(804, 391);
             this.listViewDrugs.TabIndex = 20;
             this.listViewDrugs.UseCompatibleStateImageBehavior = false;
             this.listViewDrugs.View = System.Windows.Forms.View.Details;
@@ -153,14 +155,14 @@
             // 
             this.DateOfMan.Text = "Дата выпуска";
             this.DateOfMan.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.DateOfMan.Width = 154;
+            this.DateOfMan.Width = 179;
             // 
             // labelPDateOfMame
             // 
             this.labelPDateOfMame.AutoSize = true;
             this.labelPDateOfMame.Font = new System.Drawing.Font("Calibri", 15.25F);
             this.labelPDateOfMame.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.labelPDateOfMame.Location = new System.Drawing.Point(1098, 373);
+            this.labelPDateOfMame.Location = new System.Drawing.Point(1099, 373);
             this.labelPDateOfMame.Name = "labelPDateOfMame";
             this.labelPDateOfMame.Size = new System.Drawing.Size(133, 26);
             this.labelPDateOfMame.TabIndex = 31;
@@ -171,7 +173,7 @@
             this.labelMan.AutoSize = true;
             this.labelMan.Font = new System.Drawing.Font("Calibri", 15.25F);
             this.labelMan.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.labelMan.Location = new System.Drawing.Point(1089, 308);
+            this.labelMan.Location = new System.Drawing.Point(1090, 308);
             this.labelMan.Name = "labelMan";
             this.labelMan.Size = new System.Drawing.Size(149, 26);
             this.labelMan.TabIndex = 30;
@@ -182,7 +184,7 @@
             this.labelDos.AutoSize = true;
             this.labelDos.Font = new System.Drawing.Font("Calibri", 15.25F);
             this.labelDos.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.labelDos.Location = new System.Drawing.Point(1109, 243);
+            this.labelDos.Location = new System.Drawing.Point(1110, 243);
             this.labelDos.Name = "labelDos";
             this.labelDos.Size = new System.Drawing.Size(109, 26);
             this.labelDos.TabIndex = 29;
@@ -193,7 +195,7 @@
             this.labelName.AutoSize = true;
             this.labelName.Font = new System.Drawing.Font("Calibri", 15.25F);
             this.labelName.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.labelName.Location = new System.Drawing.Point(1068, 113);
+            this.labelName.Location = new System.Drawing.Point(1069, 113);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(190, 26);
             this.labelName.TabIndex = 28;
@@ -202,7 +204,7 @@
             // textBoxDateOfMan
             // 
             this.textBoxDateOfMan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBoxDateOfMan.Location = new System.Drawing.Point(1089, 403);
+            this.textBoxDateOfMan.Location = new System.Drawing.Point(1090, 403);
             this.textBoxDateOfMan.MaxLength = 11;
             this.textBoxDateOfMan.Name = "textBoxDateOfMan";
             this.textBoxDateOfMan.Size = new System.Drawing.Size(151, 31);
@@ -212,7 +214,7 @@
             // textBoxMan
             // 
             this.textBoxMan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBoxMan.Location = new System.Drawing.Point(1054, 338);
+            this.textBoxMan.Location = new System.Drawing.Point(1055, 338);
             this.textBoxMan.Name = "textBoxMan";
             this.textBoxMan.Size = new System.Drawing.Size(218, 31);
             this.textBoxMan.TabIndex = 26;
@@ -221,7 +223,7 @@
             // textBoxDos
             // 
             this.textBoxDos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBoxDos.Location = new System.Drawing.Point(1054, 273);
+            this.textBoxDos.Location = new System.Drawing.Point(1055, 273);
             this.textBoxDos.Name = "textBoxDos";
             this.textBoxDos.Size = new System.Drawing.Size(218, 31);
             this.textBoxDos.TabIndex = 25;
@@ -230,7 +232,7 @@
             // textBoxName
             // 
             this.textBoxName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBoxName.Location = new System.Drawing.Point(1054, 143);
+            this.textBoxName.Location = new System.Drawing.Point(1055, 143);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(218, 31);
             this.textBoxName.TabIndex = 24;
@@ -245,7 +247,7 @@
             this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDelete.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.buttonDelete.Location = new System.Drawing.Point(1076, 517);
+            this.buttonDelete.Location = new System.Drawing.Point(1077, 517);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(174, 32);
             this.buttonDelete.TabIndex = 23;
@@ -262,7 +264,7 @@
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.buttonAdd.Location = new System.Drawing.Point(1076, 441);
+            this.buttonAdd.Location = new System.Drawing.Point(1077, 441);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(174, 32);
             this.buttonAdd.TabIndex = 22;
@@ -279,7 +281,7 @@
             this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEdit.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.buttonEdit.Location = new System.Drawing.Point(1076, 479);
+            this.buttonEdit.Location = new System.Drawing.Point(1077, 479);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(174, 32);
             this.buttonEdit.TabIndex = 21;
@@ -292,7 +294,7 @@
             this.labelFormRel.AutoSize = true;
             this.labelFormRel.Font = new System.Drawing.Font("Calibri", 15.25F);
             this.labelFormRel.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.labelFormRel.Location = new System.Drawing.Point(1088, 178);
+            this.labelFormRel.Location = new System.Drawing.Point(1089, 178);
             this.labelFormRel.Name = "labelFormRel";
             this.labelFormRel.Size = new System.Drawing.Size(152, 26);
             this.labelFormRel.TabIndex = 33;
@@ -310,7 +312,7 @@
             "Ампулы",
             "Сироп",
             "Крем"});
-            this.comboBoxFormRel.Location = new System.Drawing.Point(1089, 208);
+            this.comboBoxFormRel.Location = new System.Drawing.Point(1090, 208);
             this.comboBoxFormRel.Name = "comboBoxFormRel";
             this.comboBoxFormRel.Size = new System.Drawing.Size(151, 31);
             this.comboBoxFormRel.TabIndex = 34;
@@ -342,10 +344,10 @@
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(692, 158);
+            this.listView1.Location = new System.Drawing.Point(21, 144);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(178, 391);
+            this.listView1.Size = new System.Drawing.Size(182, 391);
             this.listView1.TabIndex = 36;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -364,7 +366,7 @@
             // textBoxValue
             // 
             this.textBoxValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBoxValue.Location = new System.Drawing.Point(876, 208);
+            this.textBoxValue.Location = new System.Drawing.Point(41, 43);
             this.textBoxValue.Name = "textBoxValue";
             this.textBoxValue.ReadOnly = true;
             this.textBoxValue.Size = new System.Drawing.Size(144, 31);
@@ -373,7 +375,7 @@
             // textBoxPrice
             // 
             this.textBoxPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBoxPrice.Location = new System.Drawing.Point(876, 273);
+            this.textBoxPrice.Location = new System.Drawing.Point(41, 108);
             this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.ReadOnly = true;
             this.textBoxPrice.Size = new System.Drawing.Size(144, 31);
@@ -384,7 +386,7 @@
             this.labelValue.AutoSize = true;
             this.labelValue.Font = new System.Drawing.Font("Calibri", 15.25F);
             this.labelValue.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.labelValue.Location = new System.Drawing.Point(883, 179);
+            this.labelValue.Location = new System.Drawing.Point(48, 14);
             this.labelValue.Name = "labelValue";
             this.labelValue.Size = new System.Drawing.Size(131, 26);
             this.labelValue.TabIndex = 40;
@@ -395,11 +397,24 @@
             this.labelPrice.AutoSize = true;
             this.labelPrice.Font = new System.Drawing.Font("Calibri", 15.25F);
             this.labelPrice.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.labelPrice.Location = new System.Drawing.Point(881, 244);
+            this.labelPrice.Location = new System.Drawing.Point(46, 79);
             this.labelPrice.Name = "labelPrice";
             this.labelPrice.Size = new System.Drawing.Size(134, 26);
             this.labelPrice.TabIndex = 39;
             this.labelPrice.Text = "Средняя цена";
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.labelValue);
+            this.panel1.Controls.Add(this.listView1);
+            this.panel1.Controls.Add(this.labelPrice);
+            this.panel1.Controls.Add(this.textBoxPrice);
+            this.panel1.Controls.Add(this.textBoxValue);
+            this.panel1.Location = new System.Drawing.Point(822, 14);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(226, 535);
+            this.panel1.TabIndex = 41;
             // 
             // FormDrugs
             // 
@@ -407,11 +422,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1284, 561);
-            this.Controls.Add(this.labelValue);
-            this.Controls.Add(this.labelPrice);
-            this.Controls.Add(this.textBoxPrice);
-            this.Controls.Add(this.textBoxValue);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.comboBoxFormRel);
             this.Controls.Add(this.labelFormRel);
@@ -437,7 +448,10 @@
             this.Name = "FormDrugs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDrugs";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormDrugs_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -476,5 +490,6 @@
         private System.Windows.Forms.TextBox textBoxPrice;
         private System.Windows.Forms.Label labelValue;
         private System.Windows.Forms.Label labelPrice;
+        private System.Windows.Forms.Panel panel1;
     }
 }

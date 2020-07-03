@@ -128,7 +128,11 @@ namespace Pharmacy
         {
             Form Menu = Application.OpenForms[0];
             Menu.Show();
-            this.Close();
+            this.Hide();
+        }
+        private void FormPharmacy_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
